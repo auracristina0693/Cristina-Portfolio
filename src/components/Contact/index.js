@@ -36,8 +36,8 @@ export const Contact = () => {
           height={400}
         />
       </Flex>
-      <Flex justifyContent="space-evenly" w="100%" h="md">
-        <Flex alignItems="center" flexDirection="column" w="sm" h="sm">
+      <Flex justifyContent="space-evenly" w="100%" py={16}>
+        <Flex alignItems="center" flexDirection="column" w="sm">
           <Image
             src={linkedin}
             boxSize="100"
@@ -54,7 +54,7 @@ export const Contact = () => {
             </Link>
           </Text>
         </Flex>
-        <Flex alignItems="center" flexDirection="column" w="sm" h="sm">
+        <Flex alignItems="center" flexDirection="column" w="sm">
           <Image
             src={GitHub}
             boxSize="100"
@@ -68,7 +68,7 @@ export const Contact = () => {
             </Link>
           </Text>
         </Flex>
-        <Flex alignItems="center" flexDirection="column" w="sm" h="sm">
+        <Flex alignItems="center" flexDirection="column" w="sm">
           <Image
             src={gmail}
             boxSize="100"

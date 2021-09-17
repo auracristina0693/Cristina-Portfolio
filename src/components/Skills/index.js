@@ -6,6 +6,7 @@ import html from '../../assets/images/html.png';
 import css from '../../assets/images/css.png';
 import js from '../../assets/images/js.png';
 import react from '../../assets/images/react.png';
+import TechSkills from '../TechSkills';
 
 const defaultOptions = {
   loop: true,
@@ -27,7 +28,7 @@ export const Skills = () => {
 
   return (
     <Box id="skills">
-      <Flex>
+      <Flex alignItems="center">
         <Flex
           justifyContent="center"
           w="100%"
@@ -55,66 +56,7 @@ export const Skills = () => {
             ))}
           </Flex>
         </Flex>
-        <Flex w="md" h="lg">
-          <Flex
-            w="sm"
-            h="sm"
-            flexDirection="column"
-            pt={16}
-            justifyContent="space-evenly"
-            pr={16}
-          >
-            <Image
-              src={html}
-              borderRadius="full"
-              boxSize="110"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pl={5} pb={5} color="purple.700">
-              Html
-            </Text>
-            <Image
-              src={css}
-              borderRadius="full"
-              boxSize="110"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pl={5} pb={5} color="purple.700">
-              Css
-            </Text>
-          </Flex>
-          <Flex
-            w="sm"
-            h="sm"
-            flexDirection="column"
-            pt={16}
-            justifyContent="space-evenly"
-            pr={16}
-          >
-            <Image
-              src={js}
-              borderRadius="full"
-              boxSize="100"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pr={5} pb={5} color="purple.700">
-              Javascript
-            </Text>
-            <Image
-              src={react}
-              boxSize="100"
-              borderRadius="full"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pr={5} pb={5} color="purple.700">
-              React
-            </Text>
-          </Flex>
-        </Flex>
+        <TechSkills />
       </Flex>
       <Flex
         justifyContent="center"

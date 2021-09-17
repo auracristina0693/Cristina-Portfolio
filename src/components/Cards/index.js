@@ -9,8 +9,7 @@ export const Card = () => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      h={64}
-      w={60}
+      w="xs"
       borderRadius="xl"
       boxShadow="dark-lg"
       p="6"
