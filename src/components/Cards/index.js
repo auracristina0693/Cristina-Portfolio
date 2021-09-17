@@ -5,6 +5,7 @@ import imageR from '../../assets/images/Rem-Image.png';
 export const Card = () => {
   return (
     <Flex
+      my={2}
       backgroundSize="cover"
       flexDirection="column"
       justifyContent="center"

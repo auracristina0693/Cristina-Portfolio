@@ -1,5 +1,13 @@
 import React from 'react';
-import { Flex, Heading, Text, Image, Link, Button } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Image,
+  Link,
+  Button,
+} from '@chakra-ui/react';
 import Lottie from 'react-lottie';
 import astronaut3 from '../../assets/animation/astronaut-3.json';
 import linkedin from '../../assets/images/linkedin.png';
@@ -16,27 +24,24 @@ const defaultOptions = {
 
 export const Contact = () => {
   return (
-    <Flex flexDirection="column" backgroundColor="purple.50" id="contact">
-      <Flex
-        justifyContent="center"
-        w="100%"
-        h="xl"
-        flexDirection="column"
-        alignItems="center"
+    <Box py={8} id="contact">
+      <Text
+        align="center"
+        fontWeight="bold"
+        fontSize={{ base: '3xl', md: '5xl' }}
       >
-        <Heading mb={4} size="2xl">
-          Let's create something together
-        </Heading>
-        <Text pb={2} color="pink.500" fontSize="3xl">
-          &#x1F33B; Contact me!
-        </Text>
+        Let's create something together
+      </Text>
+      <Text align="center" pb={2} color="pink.500" fontSize="3xl">
+        &#x1F33B; Contact me!
+      </Text>
+      <Box maxW="md" margin="0 auto">
         <Lottie
           options={{ animationData: astronaut3, ...defaultOptions }}
-          width={400}
-          height={400}
+          width="100%"
         />
-      </Flex>
-      <Flex justifyContent="space-evenly" w="100%" py={16}>
+      </Box>
+      <Flex justifyContent="space-evenly" py={8} wrap="wrap">
         <Flex alignItems="center" flexDirection="column" w="sm">
           <Image
             src={linkedin}
@@ -83,7 +88,7 @@ export const Contact = () => {
           </Button>
         </Flex>
       </Flex>
-    </Flex>
+    </Box>
   );
 };
 

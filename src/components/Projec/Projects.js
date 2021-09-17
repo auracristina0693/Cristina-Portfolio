@@ -22,36 +22,27 @@ export const Projects = () => {
         backgroundColor="purple.50"
         alignItems="center"
       >
-        <Flex w="3xl">
-          <Flex
-            flexDirection="column"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Lottie
-              options={{ animationData: astronaut, ...defaultOptions }}
-              width={250}
-              height={250}
-              pl={10}
-            />
-          </Flex>
-          <Flex
-            w="100%"
-            flexDirection="column"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Heading size="2xl">Projects</Heading>
-            <Flex>
-              <Text pt={6} color="pink.500" fontSize="2xl">
-                &#x1F9DE;&#x200D;&#x2640; Here you will find most recent
-                projects
-              </Text>
-            </Flex>
-          </Flex>
+        <Lottie
+          options={{ animationData: astronaut, ...defaultOptions }}
+          width={250}
+          height={250}
+          pl={10}
+        />
+
+        <Flex
+          w="100%"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Heading size="2xl">Projects</Heading>
+
+          <Text pt={6} color="pink.500" fontSize="2xl">
+            &#x1F9DE;&#x200D;&#x2640; Here you will find most recent projects
+          </Text>
         </Flex>
       </Flex>
-      <Flex bg="purple.50" py={20} justifyContent="space-evenly">
+      <Flex bg="purple.50" py={20} justifyContent="space-evenly" wrap="wrap">
         <Card />
         <Card />
         <Card />

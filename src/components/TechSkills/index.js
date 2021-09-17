@@ -9,7 +9,7 @@ import SkillCircle from '../SkillCircle';
 
 const TechSkills = () => {
   return (
-    <Box w="5xl">
+    <Box w="xl">
       <Flex my={4}>
         <SkillCircle image={html} text="HTML" />
         <SkillCircle image={js} text="Javascript" />
