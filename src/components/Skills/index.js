@@ -26,7 +26,7 @@ export const Skills = () => {
   ];
 
   return (
-    <Box>
+    <Box id="skills">
       <Flex>
         <Flex
           justifyContent="center"
@@ -44,7 +44,7 @@ export const Skills = () => {
           />
         </Flex>
         <Flex h="lg" w="4xl" flexDirection="column">
-          <Heading pb={14} size="2xl" pt={6}>
+          <Heading pb={14} size="2xl" pt={10}>
             Skills
           </Heading>
           <Flex className="text" w="100%" flexDirection="column">
@@ -116,7 +116,13 @@ export const Skills = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex justifyContent="center" w="100%" h={40} backgroundColor="purple.50">
+      <Flex
+        justifyContent="center"
+        w="100%"
+        h={36}
+        backgroundColor="purple.50"
+        pt={8}
+      >
         <Text fontSize="3xl" color="purple.500">
           &#x1F4AB; I'm constantly learning, currently I am improving my english
           levels.

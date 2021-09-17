@@ -25,7 +25,7 @@ const Hero = () => {
 
         <Flex>
           <Button my={8} colorScheme="purple" variant="solid" size="md">
-            Contact Me
+            Download my CV
           </Button>
         </Flex>
       </Flex>

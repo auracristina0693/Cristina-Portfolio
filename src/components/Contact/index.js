@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Heading, Text, Image, Link } from '@chakra-ui/react';
+import { Flex, Heading, Text, Image, Link, Button } from '@chakra-ui/react';
 import Lottie from 'react-lottie';
 import astronaut3 from '../../assets/animation/astronaut-3.json';
 import linkedin from '../../assets/images/linkedin.png';
@@ -16,7 +16,7 @@ const defaultOptions = {
 
 export const Contact = () => {
   return (
-    <Flex flexDirection="column" backgroundColor="purple.50">
+    <Flex flexDirection="column" backgroundColor="purple.50" id="contact">
       <Flex
         justifyContent="center"
         w="100%"
@@ -24,7 +24,7 @@ export const Contact = () => {
         flexDirection="column"
         alignItems="center"
       >
-        <Heading mb={4} size="2xl" mt={12}>
+        <Heading mb={4} size="2xl">
           Let's create something together
         </Heading>
         <Text pb={2} color="pink.500" fontSize="3xl">
@@ -76,11 +76,11 @@ export const Contact = () => {
             boxShadow="dark-lg"
             mb={4}
           />
-          <Text color="purple.600" fontSize="xl">
+          <Button colorScheme="purple" variant="solid" size="md">
             <Link href="mailto:auracristina0693@gmail.com" target="_blank">
               &#x1F337; auracristina0693
             </Link>
-          </Text>
+          </Button>
         </Flex>
       </Flex>
     </Flex>

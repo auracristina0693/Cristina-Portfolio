@@ -17,13 +17,13 @@ export const Navbar = () => {
         <Link href="/">Home</Link>
       </Text>
       <Text>
-        <Link href="/">Projects</Link>
+        <Link href="#projects">Projects</Link>
       </Text>
       <Text>
-        <Link href="/">Skills</Link>
+        <Link href="#skills">Skills</Link>
       </Text>
       <Text>
-        <Link href="/">Contact</Link>
+        <Link href="#contact">Contact</Link>
       </Text>
     </HStack>
   );

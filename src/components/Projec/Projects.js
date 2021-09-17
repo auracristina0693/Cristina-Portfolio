@@ -14,7 +14,7 @@ const defaultOptions = {
 
 export const Projects = () => {
   return (
-    <Box>
+    <Box id="projects">
       <Flex
         justifyContent="center"
         w="100%"
@@ -25,7 +25,6 @@ export const Projects = () => {
       >
         <Flex w="3xl" h="md">
           <Flex
-            pt={20}
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
@@ -44,9 +43,7 @@ export const Projects = () => {
             justifyContent="center"
             alignItems="center"
           >
-            <Heading pt={20} size="2xl">
-              Projects
-            </Heading>
+            <Heading size="2xl">Projects</Heading>
             <Flex>
               <Text pt={6} color="pink.500" fontSize="2xl">
                 &#x1F9DE;&#x200D;&#x2640; Here you will find most recent
