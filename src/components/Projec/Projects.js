@@ -49,7 +49,8 @@ export const Projects = () => {
             </Heading>
             <Flex>
               <Text pt={6} color="pink.500" fontSize="2xl">
-                Here you will find most recent projects
+                &#x1F9DE;&#x200D;&#x2640; Here you will find most recent
+                projects
               </Text>
             </Flex>
           </Flex>

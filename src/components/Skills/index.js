@@ -44,7 +44,7 @@ export const Skills = () => {
           />
         </Flex>
         <Flex h="lg" w="4xl" flexDirection="column">
-          <Heading pb={14} size="2xl">
+          <Heading pb={14} size="2xl" pt={6}>
             Skills
           </Heading>
           <Flex className="text" w="100%" flexDirection="column">
@@ -55,40 +55,70 @@ export const Skills = () => {
             ))}
           </Flex>
         </Flex>
-        <Flex w="md" h="lg" flexDirection="column">
-          <Image
-            src={html}
-            borderRadius="full"
-            boxSize="110"
-            mb={4}
-            boxShadow="dark-lg"
-          />
-          <Image
-            src={css}
-            borderRadius="full"
-            boxSize="110"
-            mb={4}
-            boxShadow="dark-lg"
-          />
-          <Image
-            src={js}
-            borderRadius="full"
-            boxSize="100"
-            mb={4}
-            boxShadow="dark-lg"
-          />
-          <Image
-            src={react}
-            boxSize="100"
-            borderRadius="full"
-            mb={4}
-            boxShadow="dark-lg"
-          />
+        <Flex w="md" h="lg">
+          <Flex
+            w="sm"
+            h="sm"
+            flexDirection="column"
+            pt={16}
+            justifyContent="space-evenly"
+            pr={16}
+          >
+            <Image
+              src={html}
+              borderRadius="full"
+              boxSize="110"
+              mb={4}
+              boxShadow="dark-lg"
+            />
+            <Text fontSize="2xl" pl={5} pb={5} color="purple.700">
+              Html
+            </Text>
+            <Image
+              src={css}
+              borderRadius="full"
+              boxSize="110"
+              mb={4}
+              boxShadow="dark-lg"
+            />
+            <Text fontSize="2xl" pl={5} pb={5} color="purple.700">
+              Css
+            </Text>
+          </Flex>
+          <Flex
+            w="sm"
+            h="sm"
+            flexDirection="column"
+            pt={16}
+            justifyContent="space-evenly"
+            pr={16}
+          >
+            <Image
+              src={js}
+              borderRadius="full"
+              boxSize="100"
+              mb={4}
+              boxShadow="dark-lg"
+            />
+            <Text fontSize="2xl" pr={5} pb={5} color="purple.700">
+              Javascript
+            </Text>
+            <Image
+              src={react}
+              boxSize="100"
+              borderRadius="full"
+              mb={4}
+              boxShadow="dark-lg"
+            />
+            <Text fontSize="2xl" pr={5} pb={5} color="purple.700">
+              React
+            </Text>
+          </Flex>
         </Flex>
       </Flex>
-      <Flex justifyContent="center" w="100%" h="md" backgroundColor="purple.50">
+      <Flex justifyContent="center" w="100%" h={40} backgroundColor="purple.50">
         <Text fontSize="3xl" color="purple.500">
-          &#x1F4AB; I'm constantly learning, currently I am improving my English
+          &#x1F4AB; I'm constantly learning, currently I am improving my english
           levels.
         </Text>
       </Flex>
