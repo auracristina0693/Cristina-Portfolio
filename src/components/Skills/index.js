@@ -6,6 +6,7 @@ import html from '../../assets/images/html.png';
 import css from '../../assets/images/css.png';
 import js from '../../assets/images/js.png';
 import react from '../../assets/images/react.png';
+import TechSkills from '../TechSkills';
 
 const defaultOptions = {
   loop: true,
@@ -27,23 +28,14 @@ export const Skills = () => {
 
   return (
     <Box id="skills">
-      <Flex>
-        <Flex
-          justifyContent="center"
-          w="100%"
-          h="lg"
-          flexDirection="column"
-          backgroundColor="purple.50"
-          alignItems="center"
-        >
+      <Flex alignItems="center" justifyContent="space-between" wrap="wrap">
+        <Flex>
           <Lottie
             options={{ animationData: astronaut2, ...defaultOptions }}
-            width={450}
-            height={450}
-            pl={10}
+            width="100%"
           />
         </Flex>
-        <Flex h="lg" w="4xl" flexDirection="column">
+        <Flex flexDirection="column">
           <Heading pb={14} size="2xl" pt={10}>
             Skills
           </Heading>
@@ -55,74 +47,9 @@ export const Skills = () => {
             ))}
           </Flex>
         </Flex>
-        <Flex w="md" h="lg">
-          <Flex
-            w="sm"
-            h="sm"
-            flexDirection="column"
-            pt={16}
-            justifyContent="space-evenly"
-            pr={16}
-          >
-            <Image
-              src={html}
-              borderRadius="full"
-              boxSize="110"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pl={5} pb={5} color="purple.700">
-              Html
-            </Text>
-            <Image
-              src={css}
-              borderRadius="full"
-              boxSize="110"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pl={5} pb={5} color="purple.700">
-              Css
-            </Text>
-          </Flex>
-          <Flex
-            w="sm"
-            h="sm"
-            flexDirection="column"
-            pt={16}
-            justifyContent="space-evenly"
-            pr={16}
-          >
-            <Image
-              src={js}
-              borderRadius="full"
-              boxSize="100"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pr={5} pb={5} color="purple.700">
-              Javascript
-            </Text>
-            <Image
-              src={react}
-              boxSize="100"
-              borderRadius="full"
-              mb={4}
-              boxShadow="dark-lg"
-            />
-            <Text fontSize="2xl" pr={5} pb={5} color="purple.700">
-              React
-            </Text>
-          </Flex>
-        </Flex>
+        <TechSkills />
       </Flex>
-      <Flex
-        justifyContent="center"
-        w="100%"
-        h={36}
-        backgroundColor="purple.50"
-        pt={8}
-      >
+      <Flex justifyContent="center" w="100%" backgroundColor="purple.50" pt={8}>
         <Text fontSize="3xl" color="purple.500">
           &#x1F4AB; I'm constantly learning, currently I am improving my english
           levels.

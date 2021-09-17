@@ -5,8 +5,8 @@ import picture from '../../assets/images/foto-hero.jpg';
 
 const Hero = () => {
   return (
-    <Flex justifyContent="space-evenly">
-      <Flex height={96} flexDirection="column" justifyContent="flex-end">
+    <Flex justifyContent="space-evenly" alignItems="center" wrap="wrap">
+      <Flex flexDirection="column" justifyContent="flex-end">
         <Box my={8}>
           <Flex>
             <Heading size="3xl">Aura</Heading>
@@ -16,13 +16,10 @@ const Hero = () => {
           </Flex>
           <Heading size="3xl">Salazar Quintero</Heading>
         </Box>
-        <Flex w="lg">
-          <Text fontSize="3xl" color="pink.500">
-            I'm the fronted developer you <br />
-            are looking for &#x1F49C;
-          </Text>
-        </Flex>
-
+        <Text fontSize={{ base: 'xl', md: '3xl' }} color="pink.500">
+          I'm the fronted developer you <br />
+          are looking for &#x1F49C;
+        </Text>
         <Flex>
           <Button my={8} colorScheme="purple" variant="solid" size="md">
             Download my CV
@@ -33,6 +30,7 @@ const Hero = () => {
         bgImage={bgPicture}
         width="lg"
         height="lg"
+        backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundSize="cover"
         justifyContent="center"
