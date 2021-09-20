@@ -18,12 +18,11 @@ export const Projects = () => {
       <Flex
         justifyContent="center"
         w="100%"
-        h="md"
         flexDirection="column"
         backgroundColor="purple.50"
         alignItems="center"
       >
-        <Flex w="3xl" h="md">
+        <Flex w="3xl">
           <Flex
             flexDirection="column"
             justifyContent="center"
@@ -37,7 +36,6 @@ export const Projects = () => {
             />
           </Flex>
           <Flex
-            h="lg"
             w="100%"
             flexDirection="column"
             justifyContent="center"
@@ -53,7 +51,7 @@ export const Projects = () => {
           </Flex>
         </Flex>
       </Flex>
-      <Flex bg="purple.50" pb={20} justifyContent="space-evenly">
+      <Flex bg="purple.50" py={20} justifyContent="space-evenly">
         <Card />
         <Card />
         <Card />

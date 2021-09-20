@@ -5,7 +5,7 @@ import picture from '../../assets/images/foto-hero.jpg';
 
 const Hero = () => {
   return (
-    <Flex justifyContent="space-evenly">
+    <Flex justifyContent="space-evenly" alignItems="center" wrap="wrap">
       <Flex height={96} flexDirection="column" justifyContent="flex-end">
         <Box my={8}>
           <Flex>

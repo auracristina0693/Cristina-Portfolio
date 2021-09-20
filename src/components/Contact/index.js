@@ -36,8 +36,8 @@ export const Contact = () => {
           height={400}
         />
       </Flex>
-      <Flex justifyContent="space-evenly" w="100%" h="md">
-        <Flex alignItems="center" flexDirection="column" w="sm" h="sm">
+      <Flex justifyContent="space-evenly" w="100%" mb={6}>
+        <Flex alignItems="center" flexDirection="column" w="sm">
           <Image
             src={linkedin}
             boxSize="100"
@@ -45,16 +45,16 @@ export const Contact = () => {
             boxShadow="dark-lg"
             mb={4}
           />
-          <Text color="purple.600" fontSize="xl">
+          <Button colorScheme="purple" variant="solid" size="md">
             <Link
               href="https://www.linkedin.com/in/auracristina0693/"
               target="_blank"
             >
               &#x1F33C; auracristina0693
             </Link>
-          </Text>
+          </Button>
         </Flex>
-        <Flex alignItems="center" flexDirection="column" w="sm" h="sm">
+        <Flex alignItems="center" flexDirection="column" w="sm">
           <Image
             src={GitHub}
             boxSize="100"
@@ -62,13 +62,13 @@ export const Contact = () => {
             boxShadow="dark-lg"
             mb={4}
           />
-          <Text color="purple.600" fontSize="xl">
+          <Button colorScheme="purple" variant="solid" size="md">
             <Link href="https://github.com/auracristina0693" target="_blank">
               &#x1F33B; auracristina0693
             </Link>
-          </Text>
+          </Button>
         </Flex>
-        <Flex alignItems="center" flexDirection="column" w="sm" h="sm">
+        <Flex alignItems="center" flexDirection="column" w="sm">
           <Image
             src={gmail}
             boxSize="100"
