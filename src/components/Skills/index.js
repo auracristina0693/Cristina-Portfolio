@@ -43,9 +43,7 @@ export const Skills = () => {
             ))}
           </Flex>
         </Flex>
-        <Flex w="100%" justifyContent="center" alignItems="center" wrap="wrap">
-          <TechSkills />
-        </Flex>
+        <TechSkills />
       </Flex>
       <Flex justifyContent="center" w="100%" backgroundColor="purple.50" pt={8}>
         <Text fontSize="3xl" color="purple.500">

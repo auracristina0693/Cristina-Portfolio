@@ -1,47 +1,13 @@
 import React from 'react';
-import {
-  Box,
-  HStack,
-  Link,
-  Text,
-  Menu,
-  MenuButton,
-  IconButton,
-  MenuList,
-  MenuItem,
-  Flex,
-} from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
+import { HStack, Text, Flex } from '@chakra-ui/react';
+import { Link } from 'react-scroll';
+import { HamburguerMenu } from '../HamburguerMenu';
 
 export const Navbar = () => {
   return (
     <Flex alignItems="center" h={20}>
-      <Box display={{ sm: 'base', md: 'none' }}>
-        <Menu>
-          <Menu>
-            <MenuButton
-              as={IconButton}
-              aria-label="Options"
-              icon={<HamburgerIcon />}
-              variant="outline"
-            />
-            <MenuList>
-              <MenuItem>
-                <Link href="/">Home</Link>
-              </MenuItem>
-              <MenuItem>
-                <a href="#projects">Projects</a>
-              </MenuItem>
-              <MenuItem>
-                <Link href="#skills">Skills</Link>
-              </MenuItem>
-              <MenuItem>
-                <Link href="#contact">Contact</Link>
-              </MenuItem>
-            </MenuList>
-          </Menu>
-        </Menu>
-      </Box>
+      <HamburguerMenu />
+
       <HStack
         display={{ base: 'none', md: 'flex' }}
         w="100%"
@@ -54,16 +20,24 @@ export const Navbar = () => {
         py={8}
       >
         <Text>
-          <Link href="/">Home</Link>
+          <Link to="home" smooth={true} duration={1000}>
+            Home
+          </Link>
         </Text>
         <Text>
-          <Link href="#projects">Projects</Link>
+          <Link to="projects" smooth={true} duration={1000}>
+            Projects
+          </Link>
         </Text>
         <Text>
-          <Link href="#skills">Skills</Link>
+          <Link to="skills" smooth={true} duration={1000}>
+            Skills
+          </Link>
         </Text>
         <Text>
-          <Link href="#contact">Contact</Link>
+          <Link to="contact" smooth={true} duration={1000}>
+            Contact
+          </Link>
         </Text>
       </HStack>
     </Flex>

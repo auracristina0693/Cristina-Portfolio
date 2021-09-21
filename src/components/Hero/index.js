@@ -1,20 +1,34 @@
 import React from 'react';
-import { Flex, Heading, Text, Box, Button, Image } from '@chakra-ui/react';
+import { Flex, Text, Box, Button, Image } from '@chakra-ui/react';
 import bgPicture from '../../assets/images/bg-Picture.png';
 import picture from '../../assets/images/foto-hero.jpg';
 
 const Hero = () => {
   return (
-    <Flex justifyContent="space-evenly" alignItems="center" wrap="wrap">
+    <Flex
+      justifyContent="space-evenly"
+      alignItems="center"
+      wrap="wrap"
+      id="home"
+    >
       <Flex flexDirection="column" justifyContent="flex-end">
         <Box my={8}>
           <Flex>
-            <Heading size="3xl">Aura</Heading>
-            <Heading mx={4} size="3xl" color="purple.500">
+            <Text fontWeight="bold" fontSize={{ base: '3xl', md: '5xl' }}>
+              Aura
+            </Text>
+            <Text
+              fontWeight="bold"
+              fontSize={{ base: '3xl', md: '5xl' }}
+              mx={4}
+              color="purple.500"
+            >
               Cristina
-            </Heading>
+            </Text>
           </Flex>
-          <Heading size="3xl">Salazar Quintero</Heading>
+          <Text fontWeight="bold" fontSize={{ base: '3xl', md: '5xl' }}>
+            Salazar Quintero
+          </Text>
         </Box>
         <Text fontSize={{ base: 'xl', md: '3xl' }} color="pink.500">
           I'm the fronted developer you <br />
