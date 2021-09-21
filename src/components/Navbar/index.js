@@ -16,7 +16,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 export const Navbar = () => {
   return (
     <Flex alignItems="center" h={20}>
-      <Box display={{ sm: 'block', md: 'none' }}>
+      <Box display={{ sm: 'base', md: 'none' }}>
         <Menu>
           <Menu>
             <MenuButton
@@ -43,6 +43,7 @@ export const Navbar = () => {
         </Menu>
       </Box>
       <HStack
+        display={{ base: 'none', md: 'flex' }}
         w="100%"
         className="navbar"
         spacing={8}

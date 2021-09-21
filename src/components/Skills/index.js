@@ -24,22 +24,14 @@ export const Skills = () => {
 
   return (
     <Box id="skills">
-      <Flex>
-        <Flex
-          justifyContent="center"
-          w="100%"
-          flexDirection="column"
-          backgroundColor="purple.50"
-          alignItems="center"
-        >
+      <Flex alignItems="center" justifyContent="space-between" wrap="wrap">
+        <Flex>
           <Lottie
             options={{ animationData: astronaut2, ...defaultOptions }}
-            width={450}
-            height={450}
-            pl={10}
+            width="100%"
           />
         </Flex>
-        <Flex h="lg" w="4xl" flexDirection="column">
+        <Flex flexDirection="column">
           <Heading pb={14} size="2xl" pt={10}>
             Skills
           </Heading>
@@ -55,13 +47,7 @@ export const Skills = () => {
           <TechSkills />
         </Flex>
       </Flex>
-      <Flex
-        justifyContent="center"
-        w="100%"
-        h={36}
-        backgroundColor="purple.50"
-        pt={8}
-      >
+      <Flex justifyContent="center" w="100%" backgroundColor="purple.50" pt={8}>
         <Text fontSize="3xl" color="purple.500">
           &#x1F4AB; I'm constantly learning, currently I am improving my english
           levels.
