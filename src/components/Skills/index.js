@@ -48,7 +48,7 @@ export const Skills = () => {
       </Flex>
       <Flex justifyContent="center" w="100%" pt={8} alig>
         <Text fontSize="3xl" color="purple.200" mb={4} textAlign="center">
-          &#x1F4AB; I'm constantly learning, currently I am improving my english
+          &#x1F4AB; I'm constantly learning, currently I'm improving my english
           levels.
         </Text>
       </Flex>
