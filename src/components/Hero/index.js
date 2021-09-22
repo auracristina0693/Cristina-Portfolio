@@ -2,6 +2,7 @@ import React from 'react';
 import { Flex, Text, Box, Button, Image } from '@chakra-ui/react';
 import bgPicture from '../../assets/images/bg-Picture.png';
 import picture from '../../assets/images/foto-hero.jpg';
+import backgroundImage from '../../assets/images/background.jpg';
 
 const Hero = () => {
   return (
@@ -10,31 +11,47 @@ const Hero = () => {
       alignItems="center"
       wrap="wrap"
       id="home"
+      bgImage={backgroundImage}
     >
       <Flex flexDirection="column" justifyContent="flex-end">
         <Box my={8}>
-          <Flex>
-            <Text fontWeight="bold" fontSize={{ base: '3xl', md: '5xl' }}>
+          <Flex justifyContent="center">
+            <Text
+              color="purple.100"
+              fontWeight="bold"
+              fontSize={{ base: '3xl', md: '5xl' }}
+              textAlign="center"
+            >
               Aura
             </Text>
             <Text
               fontWeight="bold"
               fontSize={{ base: '3xl', md: '5xl' }}
               mx={4}
-              color="purple.500"
+              color="purple.300"
+              textAlign="center"
             >
               Cristina
             </Text>
           </Flex>
-          <Text fontWeight="bold" fontSize={{ base: '3xl', md: '5xl' }}>
+          <Text
+            color="purple.100"
+            fontWeight="bold"
+            fontSize={{ base: '3xl', md: '5xl' }}
+            textAlign="center"
+          >
             Salazar Quintero
           </Text>
         </Box>
-        <Text fontSize={{ base: 'xl', md: '3xl' }} color="pink.500">
+        <Text
+          fontSize={{ base: 'xl', md: '3xl' }}
+          color="pink.300"
+          textAlign="center"
+        >
           I'm the fronted developer you <br />
           are looking for &#x1F49C;
         </Text>
-        <Flex w="100%">
+        <Flex w="100%" justifyContent="center">
           <Button my={8} colorScheme="purple" variant="solid" size="md">
             Download my CV
           </Button>

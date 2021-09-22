@@ -3,6 +3,7 @@ import { Flex, Heading, Text, Box } from '@chakra-ui/react';
 import Lottie from 'react-lottie';
 import astronaut2 from '../../assets/animation/astronaut-2.json';
 import TechSkills from '../TechSkills';
+import backgroundImage from '../../assets/images/background.jpg';
 
 const defaultOptions = {
   loop: true,
@@ -23,7 +24,7 @@ export const Skills = () => {
   ];
 
   return (
-    <Box id="skills">
+    <Box id="skills" bgImage={backgroundImage}>
       <Flex alignItems="center" justifyContent="space-between" wrap="wrap">
         <Flex>
           <Lottie
@@ -32,12 +33,12 @@ export const Skills = () => {
           />
         </Flex>
         <Flex flexDirection="column">
-          <Heading pb={14} size="2xl" pt={10}>
+          <Heading pb={14} size="2xl" pt={10} color="purple.100">
             Skills
           </Heading>
           <Flex className="text" w="100%" flexDirection="column">
             {textSkills.map(skill => (
-              <Text pb={6} color="pink.500" fontSize="2xl">
+              <Text pb={6} color="pink.300" fontSize="2xl">
                 {skill}
               </Text>
             ))}
@@ -45,8 +46,8 @@ export const Skills = () => {
         </Flex>
         <TechSkills />
       </Flex>
-      <Flex justifyContent="center" w="100%" backgroundColor="purple.50" pt={8}>
-        <Text fontSize="3xl" color="purple.500">
+      <Flex justifyContent="center" w="100%" pt={8} alig>
+        <Text fontSize="3xl" color="purple.200" mb={4} textAlign="center">
           &#x1F4AB; I'm constantly learning, currently I am improving my english
           levels.
         </Text>

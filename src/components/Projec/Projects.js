@@ -3,6 +3,7 @@ import { Flex, Heading, Text, Box } from '@chakra-ui/react';
 import Card from '../Cards';
 import Lottie from 'react-lottie';
 import astronaut from '../../assets/animation/astronaut-1.json';
+import backgroundImage from '../../assets/images/background.jpg';
 
 const defaultOptions = {
   loop: true,
@@ -14,12 +15,11 @@ const defaultOptions = {
 
 export const Projects = () => {
   return (
-    <Box id="projects">
+    <Box id="projects" bgImage={backgroundImage}>
       <Flex
         justifyContent="center"
         w="100%"
         flexDirection="column"
-        backgroundColor="purple.50"
         alignItems="center"
       >
         <Lottie
@@ -35,15 +35,17 @@ export const Projects = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Heading size="2xl">Projects</Heading>
+          <Heading color="pink.100" size="2xl">
+            Projects
+          </Heading>
           <Flex>
-            <Text pt={6} color="pink.500" fontSize="2xl">
+            <Text pt={6} color="pink.300" fontSize="2xl" textAlign="center">
               &#x1F9DE;&#x200D;&#x2640; Here you will find most recent projects
             </Text>
           </Flex>
         </Flex>
       </Flex>
-      <Flex bg="purple.50" py={20} justifyContent="space-evenly" wrap="wrap">
+      <Flex py={20} justifyContent="space-evenly" wrap="wrap">
         <Card />
         <Card />
         <Card />

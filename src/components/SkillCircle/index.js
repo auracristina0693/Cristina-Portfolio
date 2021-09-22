@@ -10,7 +10,7 @@ export const SkillCircle = ({ image, text }) => {
         boxSize={{ base: '100px', md: '150px' }}
         objectFit="cover"
       />
-      <Text align="center" fontSize="2x1" color="purple.700">
+      <Text align="center" fontSize="2x1" color="purple.300">
         {text}
       </Text>
     </Box>

@@ -2,42 +2,59 @@ import React from 'react';
 import { HStack, Text, Flex } from '@chakra-ui/react';
 import { Link } from 'react-scroll';
 import { HamburguerMenu } from '../HamburguerMenu';
+import backgroundImage from '../../assets/images/background.jpg';
+import { Link as ChakraLink } from '@chakra-ui/react';
 
 export const Navbar = () => {
   return (
-    <Flex alignItems="center" h={20}>
+    <Flex alignItems="center" h={50} bgImage={backgroundImage}>
       <HamburguerMenu />
 
       <HStack
         display={{ base: 'none', md: 'flex' }}
+        pos="fixed"
+        zIndex={2}
         w="100%"
         className="navbar"
         spacing={8}
-        color="gray.700"
+        color="white"
         justifyContent="flex-end"
         alignItems="center"
         fontSize="2xl"
-        py={8}
+        weight="bold"
+        bg="rgb(0, 0, 0)"
+        opacity=".7"
+        bgPosition="cover"
+        pr={8}
+        m={0}
       >
         <Text>
-          <Link to="home" smooth={true} duration={1000}>
-            Home
-          </Link>
+          <ChakraLink cursor="pointer">
+            <Link to="home" smooth={true} duration={1000}>
+              Home
+            </Link>
+          </ChakraLink>
         </Text>
         <Text>
-          <Link to="projects" smooth={true} duration={1000}>
-            Projects
-          </Link>
+          <ChakraLink cursor="pointer">
+            <Link to="projects" smooth={true} duration={1000}>
+              Projects
+            </Link>
+          </ChakraLink>
         </Text>
         <Text>
-          <Link to="skills" smooth={true} duration={1000}>
-            Skills
-          </Link>
+          <ChakraLink cursor="pointer">
+            <Link to="skills" smooth={true} duration={1000}>
+              Skills
+            </Link>
+          </ChakraLink>
         </Text>
         <Text>
-          <Link to="contact" smooth={true} duration={1000}>
-            Contact
-          </Link>
+          <ChakraLink cursor="pointer">
+            <Link to="contact" smooth={true} duration={1000}>
+              Contact
+            </Link>
+          </ChakraLink>
         </Text>
       </HStack>
     </Flex>
