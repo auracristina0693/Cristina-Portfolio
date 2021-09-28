@@ -1,9 +1,12 @@
 import React from 'react';
 import { Flex, Heading, Text, Box } from '@chakra-ui/react';
-import Card from '../Cards';
+import Card from '../Card';
 import Lottie from 'react-lottie';
 import astronaut from '../../assets/animation/astronaut-1.json';
 import backgroundImage from '../../assets/images/background.jpg';
+import image1 from '../../assets/images/Rem-Image.png';
+import image2 from '../../assets/images/To do List.png';
+import image3 from '../../assets/images/image-movies-app.png';
 
 const defaultOptions = {
   loop: true,
@@ -46,9 +49,24 @@ export const Projects = () => {
         </Flex>
       </Flex>
       <Flex py={20} justifyContent="space-evenly" wrap="wrap">
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          image={image1}
+          name="Remb-it"
+          demoUrl="https://remb-it.vercel.app/"
+          gitHubUrl="https://github.com/auracristina0693/remb-it"
+        />
+        <Card
+          image={image2}
+          name="To do list"
+          demoUrl="https://auracristina0693.github.io/todolist/"
+          gitHubUrl="https://github.com/auracristina0693/todolist"
+        />
+        <Card
+          image={image3}
+          name="To do list"
+          demoUrl="https://auracristina0693.github.io/todolist/"
+          gitHubUrl="https://github.com/auracristina0693/todolist"
+        />
       </Flex>
     </Box>
   );
