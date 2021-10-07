@@ -56,13 +56,13 @@ export const Projects = () => {
           gitHubUrl="https://github.com/auracristina0693/remb-it"
         />
         <Card
-          image={image2}
-          name="To do list"
-          demoUrl="https://auracristina0693.github.io/todolist/"
-          gitHubUrl="https://github.com/auracristina0693/todolist"
+          image={image3}
+          name="Movies app"
+          demoUrl="https://movies-app-tau-two.vercel.app/"
+          gitHubUrl="https://github.com/auracristina0693/movies-app"
         />
         <Card
-          image={image3}
+          image={image2}
           name="To do list"
           demoUrl="https://auracristina0693.github.io/todolist/"
           gitHubUrl="https://github.com/auracristina0693/todolist"
