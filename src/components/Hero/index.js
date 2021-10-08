@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text, Box, Button, Image } from '@chakra-ui/react';
+import { Flex, Text, Box, Button, Image, Link } from '@chakra-ui/react';
 import bgPicture from '../../assets/images/bg-Picture.png';
 import picture from '../../assets/images/foto-hero.jpg';
 import backgroundImage from '../../assets/images/background.jpg';
@@ -52,9 +52,14 @@ const Hero = () => {
           are looking for &#x1F49C;
         </Text>
         <Flex w="100%" justifyContent="center">
-          <Button my={8} colorScheme="purple" variant="solid" size="md">
-            Download my CV
-          </Button>
+          <Link
+            href="https://drive.google.com/file/d/1qeo73jPMjH-OWKM-pUCAJajOZBVz2_La/view?usp=sharing"
+            target="_blank"
+          >
+            <Button mt={6} colorScheme="purple" variant="solid" size="md">
+              Download my CV
+            </Button>
+          </Link>
         </Flex>
       </Flex>
       <Flex
